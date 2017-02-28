@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>土巴兔用户中心</title>
+  <link rel="stylesheet" href="css/common.css"/>
+  <link rel="stylesheet" href="css/usercenter.css"/>
+</head>
+<body>
+  <div id="header"></div>
+  <div class="dividing-line"></div>
+  <div class="progress-bills">
+    <ul>
+      <li class="current">
+        <b>1</b>
+        <p>查看购物车</p>
+      </li>
+      <li class="current">
+        <b>2</b>
+        <p>确认订单信息</p>
+      </li>
+      <li class="current">
+        <b>3</b>
+        <p>成功提交订单</p>
+      </li>
+    </ul>
+    <p></p>
+  </div>
+  <div id="current-bills">
+    <h2>恭喜您，订单添加成功！</h2>
+    <p>您的订单编号为：<span id="orderNum"></span></p>
+  </div>
+  <div id="main">
+    <!--左侧的附加导航-->
+    <div class="lf affix">
+      <h4>用户中心</h4>
+      <ul>
+        <li class="active"><a href="#my-order">我的订单</a></li>
+        <li><a href="#consume-statistics">消费统计</a></li>
+        <li><a href="#luck-lottery">幸运抽奖</a></li>
+      </ul>
+    </div>
+    <!--右侧主体区域-->
+    <div class="lf right-body">
+      <div class="active" id="my-order">
+        <table id="order-table">
+          <thead>
+          <tr>
+            <th>订单信息</th>
+            <!--<th>收货人</th>-->
+            <th>订单金额</th>
+            <th>
+              下单时间
+            </th>
+            <th>
+              订单状态
+            </th>
+            <th>操作</th>
+          </tr>
+          </thead>
+          <tbody>
+          <!--<tr>
+            <td colspan="6">
+              订单编号：1234567890
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="#"><img src="images/phone/phone_01.jpg"></a>
+              <a href="#"><img src="images/phone/phone_02.jpg"></a>
+              <a href="#"><img src="images/phone/phone_03.jpg"></a>
+            </td>
+            <td>
+              ￥3580.00<br>
+              在线支付
+            </td>
+            <td>
+              2016-10-20<br>
+              10:22:35
+            </td>
+            <td>
+              等待付款
+            </td>
+            <td>
+              <a href="#">查看</a><br>
+              <a href="#">评价</a>
+              <a href="#">晒单</a><br>
+              <a href="#">还要买</a>
+            </td>
+          </tr>-->
+          </tbody>
+        </table>
+      </div>
+      <div id="consume-statistics">
+        <h1>请选择绘图方法</h1>
+        <ul class="select-method">
+          <li class="select"><a href="#canvas">canvas版本</a></li>
+          <li><a href="#svg">svg版本</a></li>
+          <li><a href="#FusionCharts">FusionCharts插件</a></li>
+        </ul>
+        <div class="select" id="canvas">
+          <canvas id="canvas-buy-data" style="background:#f2f2f2">
+            您的浏览器不支持Canvas标签！
+          </canvas>
+        </div>
+        <div id="svg">
+          <svg id="s1" width="800" height="400">
+            <defs id="effects"></defs>
+            <rect x="0" y="0" width="800" height="400" fill-opacity="0" stroke="#000"></rect>
+            <g stroke-width="1" stroke="#333">
+              <line x1="50" y1="25" x2="50" y2="375"></line>
+              <line x1="50" y1="25" x2="45" y2="35"></line>
+              <line x1="50" y1="25" x2="55" y2="35"></line>
+              <line x1="50" y1="375" x2="775" y2="375"></line>
+              <line x1="775" y1="375" x2="765" y2="370"></line>
+              <line x1="775" y1="375" x2="765" y2="380"></line>
+            </g>
+            <g stroke-width="1" stroke="#333">
+              <line x1="50" y1="60" x2="60" y2="60"></line>
+              <line x1="50" y1="95" x2="60" y2="95"></line>
+              <line x1="50" y1="130" x2="60" y2="130"></line>
+              <line x1="50" y1="165" x2="60" y2="165"></line>
+              <line x1="50" y1="200" x2="60" y2="200"></line>
+              <line x1="50" y1="235" x2="60" y2="235"></line>
+              <line x1="50" y1="270" x2="60" y2="270"></line>
+              <line x1="50" y1="305" x2="60" y2="305"></line>
+              <line x1="50" y1="340" x2="60" y2="340"></line>
+            </g>
+          </svg>
+        </div>
+        <div id="FusionCharts">
+          <div class="lf FusionChart-sel">
+            <select>
+              <option value="column2d">column2d</option>
+              <option value="column3d">column3d</option>
+              <option value="bar2d">bar2d</option>
+              <option value="bar3d">bar3d</option>
+              <option value="pie2d">pie2d</option>
+              <option value="pie3d">pie3d</option>
+              <option value="doughnut2d">doughnut2d</option>
+              <option value="doughnut3d">doughnut3d</option>
+              <option value="line">line</option>
+            </select>
+            <h1>请选择喜欢的图形样式</h1>
+          </div>
+          <div class="lf" id="FusionCharts-diagram">
+            此处应该呈现使用FusionCharts绘制的统计图
+          </div>
+        </div>
+      </div>
+      <div id="luck-lottery">
+        <h1>请选择抽奖方式</h1>
+		<h4 class='reward-chance'>每消费1000元可获得一次抽奖机会！</h4>
+        <p class="lottery">
+          <a class="select-lottery select" href="#nine-lottery">九宫格抽奖</a>
+          <a class="select-lottery" href="#canvas-lottery">大转盘抽奖</a>
+        </p>
+        <br/>
+        <button id="bt-lottery" disabled>
+          开始抽奖(总抽奖次数:0,剩余抽奖次数:0)
+        </button>
+        <div id='nine-lottery' class='big select'>
+          <div><div class='div0 child'></div></div>
+          <div><div class='div1 child'></div></div>
+          <div><div class='div2 child'></div></div>
+          <div><div class='div3 child'></div></div>
+          <div><div class='div4 child'></div></div>
+          <div><div class='div5 child'></div></div>
+          <div><div class='div6 child'></div></div>
+          <div><div class='div7 child'></div></div>
+          <div><div class='div8 child'></div></div>
+        </div>
+        <canvas id="canvas-lottery">
+          您的浏览器不支持Canvas标签！
+        </canvas>
+      </div>
+    </div>
+  </div>
+  <div id="footer"></div>
+  <div class="modal"></div>
+  <div class="modal-quit"></div>
+  <div class="modal-reward">
+	<div class='modal-reward-dialog'>
+		<div class='modal-reward-content'>
+			<h1>恭喜你抽得 <span class='level'>1</span> 等奖!请尽快联系客服领取奖品。</h1>
+			<button class='btn btn-success rt'>确定</button>
+		</div>
+	</div>
+  </div>
+  <script src="js/jquery-1.11.3.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/fusioncharts.js"></script>
+  <script src="js/fusioncharts.charts.js"></script>
+  <script src="js/usercenter.js"></script>
+</body>
+</html>

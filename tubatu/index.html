@@ -1,0 +1,1213 @@
+﻿<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>土巴兔首页</title>
+		<link href="css/common.css"  type="text/css" rel="stylesheet">
+		<link href="css/index.css"  type="text/css" rel="stylesheet">
+	</head>
+	<body>
+		<!-- 右侧固定定位部分 id="fixed" 部分-->
+		<div id="fixed">
+			<a class="consult"><p></p><span>在线咨询</span></a>
+			<a class="idea"><p></p>意见反馈</a>
+			<a class="present">
+				<p></p>关注有礼
+				<div id="skan_code">
+					<i></i>
+					<p>扫微信</p>
+					<p>获10000套家居设计案例</p>
+					<b></b>
+				</div>
+			</a>
+			<a class="price"></a>
+			<a href="#" class="to_top"><p></p>回到顶部</a>
+		</div>
+		<!-- 左侧固定定位部分 id="fixed_box" 部分-->
+		<div id="fixed_box"></div>
+		<!-- 左侧固定定位大弹出框部分 id="bound_box" 部分-->
+		<div id="bound_box">
+			<div id="false_bound_box"></div>
+			<div id="sub_box">
+				<div class="first_box lf"><p></p></div>
+				<div class="second_box lf">
+					<ul class="calc lf">
+						<li><input type="" placeholder="房屋面积"></li>
+						<li>
+							<select name="" id="">
+								<option value="省/市">省/市</option>
+								<option value="安徽">安徽</option>
+								<option value="北京">北京</option>
+								<option value="上海">上海</option>
+								<option value="江苏">江苏</option>
+							</select>
+							<select name="" id="">
+								<option value="市/地区">市/地区</option>
+							</select>
+						</li>
+						<li><input type="" placeholder="请填写您的手机号码"></li>
+						<li><input type="hidden" placeholder="请输入建筑面积"><button></button></li>
+					</ul>
+					<div class="detail_box lf">
+						<div>
+							<b>您的装修预算约</b>
+							<span>0</span>万元 
+							<i>查看预算明细</i>
+						</div>
+						<ul>
+							<li>
+								<p>卧室预算：</p>
+								<p><span>0</span>元</p>
+							</li>
+							<li>
+								<p>客厅预算：</p>
+								<p><span>0</span>元</p>
+							</li>
+							<li>
+								<p>厨房预算：</p>
+								<p><span>0</span>元</p>
+							</li>
+							<li>
+								<p>阳台预算：</p>
+								<p><span>0</span>元</p>
+							</li>
+							<li>
+								<p>卫生间预算：</p>
+								<p><span>0</span>元</p>
+							</li>
+							<li>
+								<p>其他预算：</p>
+								<p><span>0</span>元</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="third_box lf"><div class="sub_third_box"></div></div>
+				<button class="delete">X</button>
+			</div>
+		</div>
+		<!-- 头部 header  id="top" 部分-->
+		<header id="header">
+			<div id="top_box">
+				<ul class="rt">
+					<li>
+						<a href="" id="welcome">您好，欢迎来到土巴兔！</a>
+						<a href="" id="bt-Login">[登录]</a>
+						<a href="register.html" class="register">[免费注册]</a>
+					</li>
+					<li><i></i><a href="" target="_blank">我要装修</a></li>
+					<li><i></i><a>咨询热线:4006-900-288</a></li>
+					<li><i></i><a href="" target="_blank">设计本</a></li>
+					<li><i></i><a href="" target="_blank">新闻中心</a></li>
+					<li><i></i><a href="" target="_blank">产品百科</a></li>
+				</ul>
+				<p>
+					<a href='index.html' class='index'>土巴兔首页</a>
+					<a href='detail.html' class='detail'>&nbsp;&nbsp;土巴兔详情页</a>
+				</p>
+			</div>
+		</header>
+		<!-- 头部 div  id="top_main" 部分-->
+		<div id="top_main">
+			<p id="tubatu" class="lf">
+				<a href="" target="_blank">
+					<i class="lf"></i>
+				</a>	
+			</p>
+			<ul id="search_box" class="lf">
+				<li><input class="text" placeholder="请输入您心仪的装修公司" autofocus></li>
+				<li><input class="submit" type="submit" value="搜索"></li>
+			</ul>
+		</div>
+		<!-- 页面导航 nav 部分-->
+		<nav>
+			<div id="nav">
+				<ul>
+					<li class="current"><a href="">首页</a></li>
+					<li>
+						<a href="">效果图</a>
+					</li>
+					<li><a href="">装修攻略</a></li>
+					<li><a href="">设计与报价</a><i></i></li>
+					<li><a href="">装修公司</a></li>
+					<li><a href="">家居商城</a></li>
+				</ul>
+				<i></i>
+			</div>
+		</nav>
+		<!-- banner广告 #banner -->
+		<div id="banner">
+			<!-- banner广告左侧 #left_aside -->
+			<div id="left_aside">
+				<div class="focus">
+					<p class="active" data-toggle="item" data-href="#design">
+						<i></i>
+						<b>免费设计</b>
+					</p>
+					<p data-toggle="item" data-href="#quote">
+						<i></i>
+						<b>免费报价</b>
+					</p>
+				</div>
+				<form action="">
+					<ul class="free_apply clear">
+						<li>
+							10秒登记，免费获取专业设计方案
+						</li>
+						<li>
+							<input class="box active" id="design" placeholder="您的称呼">
+							<input class="box" id="quote" placeholder="房屋面积">
+						</li>
+						<li>
+							<select name="provs" onchange="selCts(this)">
+								<option value="省/市">省/市</option>
+								<option value="安徽">安徽</option>
+								<option value="辽宁">辽宁</option>
+								<option value="江苏">江苏</option>
+								<option value="浙江">浙江</option>
+								<option value="河北">河北</option>
+								<option value="北京">北京</option>
+								<option value="天津">天津</option>
+							</select>
+							<select name="cities" class="rt">
+								<option value="市/地区">市/地区</option>
+							</select>
+						</li>
+						<li>
+							<input placeholder="填写手机号码，获取免费设计名额">
+						</li>
+						<li>
+							<input type="checkbox"> 
+							我已阅读并接受
+							<a href="">《装修常见问题条款》</a>
+						</li>
+						<li>
+							<input type="submit" value="立即申请">
+						</li>
+						<li>
+							<ul class="service_invest">
+								<li><i></i>风投C轮投资2亿美金，装修就上土巴兔</li>
+								<li><i></i>更专业的装修服务平台，1100万业主的共同选择</li>
+							</ul>
+						</li>
+					</ul>
+				</form>
+			</div>
+			<!-- banner广告中间 #main_aside -->
+			<div id="main_aside" class="lf">
+				<div id="slider">
+					<ul id="imgs"></ul>
+					<ul id="indexs"></ul>
+				</div>
+				<ul class="banner_small">
+					<li>
+						<a href=""><img class="aa infinite aas" src="images/banner_picture_07.jpg" alt=""></a>
+					</li>
+					<li>
+						<a href=""><img src="images/banner_picture_08.jpg" alt=""></a>
+					</li>
+					<li>
+						<a href=""><img src="images/banner_picture_09.jpg" alt=""></a>
+					</li>
+				</ul>
+			</div>
+			<!-- banner广告右侧 #right_aside -->
+			<div id="right_aside">
+				<p>
+					<img src="images/banner_picture_06.jpg">
+				</p>
+				<ul class="search_supervise">
+					<li>
+						<a href="">
+							<i></i>
+							<p>在土巴兔找装修公司价格实惠</p>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<i></i>
+							<p>土巴兔监管严格，施工不低于行业标准</p>
+						</a>
+					</li>
+				</ul>
+				<div class="banner_say">
+					<s class="rt"></s>
+					<span class="say_current">业主说</span>
+					&nbsp;/&nbsp;
+					<span>行业说</span>
+				</div>
+				<div class="say_detail">
+					<div>
+						<img src="images/banner_picture_11.png" alt="">
+						<span>网易新闻</span>
+					</div>
+					<div>
+						<a href="">土巴兔荣获中国家居大奖</a>
+						<p>做装修不能光喊口号，要用行动来证明自己的手艺，只有这样才能让业主住进暖暖的新家</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 页面主体内容 section -->
+		<section id="main">
+			<!-- 装修流程 div id="decorate_process" -->
+			<div id="decorate_process">
+				<p class="decorate_title">
+					<b>装修流程</b>
+					<span>
+						&nbsp;&nbsp;业主权益第一，土巴兔始终保障着业主装修每一步
+					</span>
+					<a  href=" " class="rt"></a>
+				</p>
+				<ul id="process_picture">
+					<li class="decorate_picture1">
+						<a href="">
+							<b></b>
+							<span>收房量房</span>
+						</a>
+					</li>
+					<li class="decorate_picture2">
+						<a href="">
+							<b></b>
+							<span>前期准备</span>
+						</a>
+					</li>
+					<li class="decorate_picture3">
+						<a href="">
+							<b></b>
+							<span>选装修公司</span>
+						</a>
+					</li>
+					<li class="decorate_picture4">
+						<a href="">
+							<b></b>
+							<span>设计阶段</span>
+						</a>
+					</li>
+					<li class="decorate_picture5">
+						<a href="">
+							<b></b>
+							<span>材料选购</span>
+						</a>
+					</li>
+					<li class="decorate_picture6">
+						<a href="">
+							<b></b>
+							<span>施工阶段</span>
+						</a>
+					</li>
+					<li class="decorate_picture7">
+						<a href="">
+							<b></b>
+							<span>竣工验收</span>
+						</a>
+					</li>
+					<li class="decorate_picture8">
+						<a href="">
+							<b></b>
+							<span>软装配饰</span>
+						</a>
+					</li>
+					<li class="decorate_picture9">
+						<a href="">
+							<b></b>
+							<span>装修保障</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!-- 装修效果图 div id="decorate_effect" -->
+			<div id="decorate_effect">
+				<p class="decorate_title">
+					<b>装修效果图</b>
+					<span>
+						&nbsp;&nbsp;已有36580224位业主找到灵感
+					</span>
+				</p>
+				<div class="mix_design">
+					<a href="">
+						<img src="images/effect_01.jpg">
+						<div class="black_mask">
+							<p>混搭风格二居室设计</p>
+							<span>"混搭"已经弥漫到我们生活中的每个角落，它代表了当代人的一种生活方式和一种惬意的生活模式</span>
+						</div>
+					</a>
+					<div class="lgpicture lf">
+						<a href="">
+							<img src="images/effect_02.jpg">
+							<div class="black_mask">混搭风格四居室设计</div>
+						</a>
+						<a href="">
+							<img src="images/effect_03.jpg">
+							<div class="black_mask">混搭风格三居室设计</div>
+						</a>
+						<a href="">
+							<img src="images/effect_04.jpg">
+							<div class="black_mask">混搭风格一居室设计</div>
+						</a>
+					</div>
+					<a href="" class="rt">
+						<img src="images/effect_05.jpg">
+						<div class="black_mask">混搭风格别墅设计</div>
+					</a>
+				</div>
+				<div class="clear"></div>
+				<ul id="smpicture">
+					<li>
+						<a href="">
+							<img src="images/effect_06.jpg" alt=""><br>
+							<span>客厅</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="images/effect_07.jpg" alt=""><br>
+							<span>卧室</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="images/effect_08.jpg" alt=""><br>
+							<span>餐厅</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="images/effect_09.jpg" alt=""><br>
+							<span>厨房</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="images/effect_10.jpg" alt=""><br>
+							<span>卫生间</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="images/effect_11.jpg" alt=""><br>
+							<span>阳台</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="images/effect_12.jpg" alt=""><br>
+							<span>背景墙</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="images/effect_13.jpg" alt=""><br>
+							<span>吊顶</span>
+						</a>
+					</li>
+				</ul>	
+			</div>
+			<!-- 装修攻略 div id="decorate_effect" -->
+			<div id="decorate_strategy">
+				<p class="decorate_title">
+					<b>装修攻略</b>
+					<span>
+						&nbsp;&nbsp;已有20358315位业主学习到装修知识
+					</span>
+				</p>
+				<!-- 装修日记 div id="decorate_notes" -->
+				<div id="decorate_notes">
+					<div class="notes">
+						<div></div>
+						<span>装修日记</span>
+						<i></i>
+					</div>
+					<ul>
+						<li>
+							<a href="">地中海</a>
+							<img src="images/strategy_01.jpg" alt="">
+							<a href="" class="black_mask">地中海田园混搭风，还是复试...</a>
+						</li>
+						<li>
+							<a href="">美式</a>
+							<img src="images/strategy_02.jpg" alt="">
+							<a href="" class="black_mask">清风徐来</a>
+						</li>
+						<li>
+							<a href="">混搭</a>
+							<img src="images/strategy_03.jpg" alt="">
+							<a href="" class="black_mask">90后小白自力更生，装修1平...</a>
+						</li>
+						<li>
+							<a href="">现代</a>
+							<img src="images/strategy_04.jpg" alt="">
+							<a href="" class="black_mask">万达华府四十不惑的装修历程</a>
+						</li>
+					</ul>
+				</div>
+				<!-- 学装修 div id="strategy_study" -->
+				<div id="strategy_study">
+					<div class="notes">
+						<div></div>
+						<span>学装修</span>
+						<i></i>
+					</div>
+					<ul id="decorate_consult">
+						<li>
+							<p>装修问答</p>
+							<a href="">
+								<img src="images/strategy_05.jpg" alt="">
+							</a>
+							<ul>
+								<li>
+									<b></b>
+									<a href="">母婴店装修技巧哪位大神可以说说</a>
+								</li>
+								<li>
+									<b></b>
+									<a href="">卧室拱形吊顶有哪些风水禁忌？</a>
+								</li>
+								<li>
+									<b></b>
+									<a href="">请问现代简约客厅地面是铺复合地板好还是铺砖好</a>
+								</li>
+								<li>
+									<b></b>
+									<a href="">烤漆橱柜门多少钱一平谁清楚</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<p>装修风水</p>
+							<a href="">
+								<img src="images/strategy_06.jpg" alt="">
+							</a>
+							<ul>
+								<li>
+									<b></b>
+									<a href="">金锁玉关罗盘使用方法介绍</a>
+								</li>
+								<li>
+									<b></b>
+									<a href="">房门对厕所怎么化解</a>
+								</li>
+								<li>
+									<b></b>
+									<a href="">白羊座开运水晶是什么</a>
+								</li>
+								<li>
+									<b></b>
+									<a href="">忽略这12条卧室风水知识 你就别想睡好了!</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<p>装修工具</p>
+							<a href=""><img src="images/strategy_07.jpg" alt=""></a>
+							<ul>
+								<li>
+									<b></b>
+									<a href="">装修完全手册</a>
+								</li>
+								<li>
+									<b></b>
+									<a href="">装修计算器大全</a>
+								</li>
+								<li>
+									<b></b>
+									<a href="">装修合同下载</a>
+								</li>
+								<li>
+									<b></b>
+									<a href="">土巴兔质检项目表下载</a>
+								</li>
+							</ul>
+						</li>
+					</ul>		
+				</div>
+				<div class="clear"></div>
+			</div>
+			<!-- 家居商城 div id="furniture_mall" -->
+			<div id="furniture_mall">
+				<div class="decorate_title">
+					<ul class="p_title rt">
+						<li><a href="">建材城</a></li>
+						<li><a href="">家具城</a></li>
+						<li><a href="">品牌特卖</a></li>
+						<li><a href="">主材包</a></li>
+					</ul>
+					<b>家居商城</b>
+				</div>
+				<!-- 家居商城上部 div class="father" -->
+				<div class="father">
+					<div id="left_mall" class="lf">
+						<p>
+							<img src="images/store_01.jpg" alt="">
+						</p>
+						<div class="left_left">
+							<p><a href="">建材城推荐:</a></p>
+							<ul>
+								<li><a href="">卫浴</a></li>
+								<li><a href="">开关</a></li>
+								<li><a href="">灯饰</a></li>
+								<li><a href="">厨电</a></li>
+								<li><a href="">水槽</a></li>
+								<li><a href="">墙纸</a></li>
+							</ul>
+						</div>
+						<div class="left_right">
+							<p><a href="">家具城推荐:</a></p>
+							<ul>
+								<li><a href="">沙发</a></li>
+								<li><a href="">床垫</a></li>
+								<li><a href="">床</a></li>
+								<li><a href="">电视柜</a></li>
+								<li><a href="">茶几</a></li>
+								<li><a href="">餐桌</a></li>
+							</ul>
+						</div>
+						<div class="left_bottom clear">
+							<p class="lf">热卖促销：</p>
+							<ul class="rt">
+								<li><a href="">老板 欧式吸油烟机燃气灶具（赠高端水）</a></li>
+								<li><a href="">方太 JX78＋FD21BE 风魔方烟灶套餐</a></li>
+							</ul>
+						</div>
+					</div>
+					<div id="mid_mall" class="lf">
+						<a href="">
+							<img src="images/store_02.jpg" alt="">
+						</a>
+					</div>
+					<div id="right_mall" class="lf">
+						<ul id="furniture_discount">
+							<li>
+								<a href="">
+									<img src="images/store_05.jpg" alt="">
+								</a>
+								<p>Sacon/帅康 帅康CXW-220-TE6961+35K烟灶</p>
+								<p><span>&yen;3580.00</span></p>
+								<s>8.8折</s>
+							</li>
+							<li>
+								<a href="">
+									<img src="images/store_06.png" alt="">
+								</a>
+								<p>安华卫浴 座便器aB1351连体坐便器缓冲盖板节</p>
+								<p><span>&yen;799.00</span></p>
+								<s>3.9折</s>
+							</li>
+							<li>
+								<a href="">
+									<img src="images/store_07.png" alt="">
+								</a>
+								<p>欧琳水槽双槽 不锈钢厨房水槽 OLWG78430</p>
+								<p><span>&yen;899.00</span></p>
+								<s>2.4折</s>
+							</li>
+							<li>
+								<a href="">
+									<img src="images/store_08.png" alt="">
+								</a>
+								<p>方太 JX77＋FD21BE 风魔方烟灶套餐</p>
+								<p><span>&yen;3999.00</span></p>
+								<s>7.7折</s>
+							</li>
+						</ul>	
+					</div>
+				</div>
+				<!-- 家居商城底部 div id="bottom_mall" -->
+				<div id="bottom_mall">
+					<a href="">
+						<img src="images/store_09.jpg" alt="">
+					</a>
+					<a href=""><img src="images/store_10.jpg" alt=""></a>
+					<a href=""><img src="images/store_11.jpg" alt=""></a>
+					<a href=""><img src="images/store_12.jpg" alt=""></a>
+					<a href=""><img src="images/store_13.jpg" alt=""></a>
+					<a href=""><img src="images/store_14.jpg" alt=""></a>
+					<div class="clear"></div>
+				</div>
+			</div>
+			<!-- 土巴兔装修榜 div id="decorate_list" -->
+			<div id="decorate_list">
+				<p class="decorate_title">
+					<a href="">北京装修公司哪家强？</a>
+					<b>土巴兔装修榜</b>
+					<span>已为9614884位业主提供装修服务</span>
+				</p>
+				<!-- 土巴兔装修榜左侧 div id="list_column" -->
+				<div id="list_column" class="lf">
+					<div class="list_item_01">
+						<a href="">
+							<img src="images/list_01.jpg" alt="">
+							<img class="img2" src="images/list_02.jpg" alt="">
+							<img class="img3" src="images/list_03.jpg" alt="">
+						</a>
+					</div>
+					<div class="list_item_02">
+						<p class="list_item_title">最热心装修公司</p>
+						<a href="" class="list_item_img lf">
+							<img src="images/list_04.jpg" alt="">
+						</a>
+						<div class="list_item_note lf">
+							<p><a href="">友仁缘装饰</a></p>
+							<p>
+								<b></b>
+								<span>近30天回答415</span>
+							</p>
+							<p>
+								<b></b>
+								<span>已帮助业主255225</span>
+							</p>
+							<i class="icon"></i>
+						</div>
+					</div>
+					<div class="list_item_03">
+						<p class="list_item_title">最新签约装修保</p>
+						<a href="" class="list_item_img lf">
+							<img src="images/list_05.jpg" alt="">
+						</a>
+						<div class="list_item_note lf">
+							<p><a href="">华艺名筑装饰</a></p>
+							<p>
+								<b></b>
+								<span>北京最新签约土巴兔装修保公司</span>
+							</p>
+							<i class="icon"></i>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<!-- 土巴兔装修榜右侧 div id="list_rank" -->
+				<div id="list_rank" class="product_detail lf">
+					<ul class="active_current">
+						<li class="lf current">活跃排名</li>
+						<li class="lf"></li>
+					</ul>
+					<ul id="company_rank">
+						<li>
+							<span class="lf">1</span>
+							<a href="" class="lf">
+								<img src="images/list_06.jpg" alt="">
+							</a>
+							<div class="lf">
+								<a href="">友仁缘装饰</a>
+								<p>月回答量：415</p>
+							</div>
+						</li>
+						<li>
+							<span class="lf">2</span>
+							<a href="" class="lf">
+								<img src="images/list_07.jpg" alt="">
+							</a>
+							<div class="lf">
+								<a href="">安越装饰</a>
+								<p>月回答量：401</p>
+							</div>
+						</li>
+						<li>
+							<span class="lf">3</span>
+							<a href="" class="lf">
+								<img src="images/list_08.jpg" alt="">
+							</a>
+							<div class="lf">
+								<a href="">泰峰装饰</a>
+								<p>月回答量：297</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="clear"></div>
+				<ul class="decorate_bottom">
+					<li class="lf"><a href=""><img src="images/list_09.jpg" alt=""></a></li>
+					<li class="lf"><a href=""><img src="images/list_10.jpg" alt=""></a></li>
+				</ul>
+			</div>
+			<!-- 北京装修公司 div id="decorate_company" -->
+			<div id="decorate_company">
+				<p class="decorate_title">
+					<b>北京装修公司</b>
+					<span>装修公司CEO面对面</span>
+				</p>
+				<!-- 北京装修公司左侧 div id="company_list" -->
+				<div id="company_list" class="lf">
+					<ul class="sub_company">
+						<li class="init active">
+							<img src="images/company_01.jpg" data-img="#first" data-toggle="intro" alt="">
+						</li>
+						<li>
+							<img src="images/company_02.jpg" data-img="#second" data-toggle="intro" alt="">
+						</li>
+						<li>
+							<img src="images/company_03.jpg" data-img="#third" data-toggle="intro" alt="">
+						</li>
+						<li>
+							<img src="images/company_04.jpg" data-img="#fourth" data-toggle="intro" alt="">
+						</li>
+						<li>
+							<img src="images/company_05.jpg" data-img="#fiveth" data-toggle="intro" alt="">
+						</li>
+						<li>
+							<img src="images/company_06.jpg" data-img="#sixth" data-toggle="intro" alt="">
+						</li>
+						<li>
+							<img src="images/company_07.jpg" data-img="#seventh" data-toggle="intro" alt="">
+						</li>
+						<li>
+							<img src="images/company_08.jpg" data-img="#eighth" data-toggle="intro" alt="">
+						</li>
+						<li>
+							<img src="images/company_09.jpg" data-img="#nineth" data-toggle="intro" alt="">
+						</li>
+						<li class="end">
+							<img src="images/company_10.png" alt="">
+						</li>
+						<li>
+							<img src="images/company_10.png" alt="">
+						</li>
+						<li>
+							<img src="images/company_10.png" alt="">
+						</li>
+					</ul>
+					<div id="first" class="company_introduce active">
+						<div class="introduce_lf lf" >
+							<div><a href="">
+								<img src="images/company_011.jpg" alt="">
+							</a></div>
+							<a href="">免费预约</a>
+							<p>已有<span>3154</span>人咨询</p>
+						</div>
+						<div class="introduce_rt lf">
+							<div class="introduce_detail lf">
+								<p>克洛尼装饰</p>
+								<ul>
+									<li class="stamp"></li>
+									<li class="stamp"></li>
+									<li class="stamp"></li>
+									<li class="stamp"></li>
+									<li>15000元</li>
+									<li class="stamp"></li>
+									<li>18套</li>
+									<li class="stamp"></li>
+									<li>104个</li>
+									<li class="stamp"></li>
+									<li>162次</li>
+								</ul>
+								<div class="clear"></div>
+								<p><i></i>北苑路5号黄金苑2号底商3层</p>
+							</div>
+							<div class="public_praise lf">
+								<p>口碑值</p>
+								<a href="">2441</a>
+							</div>
+							<div class="clear"></div>
+							<div class="company_detail">
+								<p>
+									北京克洛尼装饰有限公司简介克洛尼装饰装饰工程有限公司 自2008年成立以来,公司一直以“细节决定成败”的理念、以“顾客至上”的服务宗旨,历经5年多的砺练,通过数万套的精品装饰工程,通过了消费者协会颁发的 ...<a href="">更多</a>
+								</p>
+								<ul>
+									<li><a href=""><img src="images/company_012.jpg" alt=""></a>
+										<p class="black_mask">
+											<a href="" class="lf">贵园东里刘女士生</a>
+											<a href=""class="rt">7张</a>
+										</p>
+									</li>
+									<li><a href=""><img src="images/company_013.jpg" alt=""></a>
+										<p class="black_mask">
+											<a href="" class="lf">泰和园三区文先生</a>
+											<a href=""class="rt">5张</a>
+										</p>
+									</li>
+									<li><a href=""><img src="images/company_014.jpg" alt=""></a>
+										<p class="black_mask">
+											<a href="" class="lf">金桥花园陈先生</a>
+											<a href="" class="rt">10张</a>
+										</p>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div id="second" class="company_introduce">
+						<div class="introduce_lf lf" >
+							<div><a href="">
+								<img src="images/company_021.jpg" alt="">
+							</a></div>
+							<a href="">免费预约</a>
+							<p>已有<span>13920</span>人咨询</p>
+						</div>
+						<div class="introduce_rt lf">
+							<div class="introduce_detail lf">
+								<p>金典装饰</p>
+								<ul>
+									<li class="stamp"></li>
+									<li class="stamp"></li>
+									<li class="stamp"></li>
+									<li class="stamp"></li>
+									<li>15494元</li>
+									<li class="stamp"></li>
+									<li>51套</li>
+									<li class="stamp"></li>
+									<li>227个</li>
+									<li class="stamp"></li>
+									<li>653次</li>
+								</ul>
+								<div class="clear"></div>
+								<p><i></i>大兴店：大兴黄村旭辉紫郡8-2-102 </p>
+							</div>
+							<div class="public_praise lf">
+								<p>口碑值</p>
+								<a href="">1787</a>
+							</div>
+							<div class="clear"></div>
+							<div class="company_detail">
+								<p>
+									北京金典伟业装饰工程有限公司 是一家集装饰设计、工程施工、家居产品生产销售为一体的综合性装饰企业。 主要从事住宅、公寓、办公、商业、酒店等场所的装修设计与施工 公司经北京市工商管理局正式批 ...<a href="">更多</a>
+								</p>
+								<ul>
+									<li><a href=""><img src="images/company_022.jpg" alt=""></a>
+										<p class="black_mask">
+											<a href="" class="lf">南苑鹿海园张先生</a>
+											<a href=""class="rt">13张</a>
+										</p>
+									</li>
+									<li><a href=""><img src="images/company_023.jpg" alt=""></a>
+										<p class="black_mask">
+											<a href="" class="lf">万寿路南里黄小姐</a>
+											<a href=""class="rt">16张</a>
+										</p>
+									</li>
+									<li><a href=""><img src="images/company_024.jpg" alt=""></a>
+										<p class="black_mask">
+											<a href="" class="lf">香雪兰溪夏大妈</a>
+											<a href="" class="rt">8张</a>
+										</p>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div id="third" class="company_introduce">
+						<div class="introduce_lf lf" >
+							<div><a href="">
+								<img src="images/company_031.jpg" alt="">
+							</a></div>
+							<a href="">免费预约</a>
+							<p>已有<span>2398</span>人咨询</p>
+						</div>
+						<div class="introduce_rt lf">
+							<div class="introduce_detail lf">
+								<p>中天创实</p>
+								<ul>
+									<li class="stamp"></li>
+									<li class="stamp"></li>
+									<li class="stamp"></li>
+									<li class="stamp"></li>
+									<li>49800元</li>
+									<li class="stamp"></li>
+									<li>151套</li>
+									<li class="stamp"></li>
+									<li>156个</li>
+									<li class="stamp"></li>
+									<li>780次</li>
+								</ul>
+								<div class="clear"></div>
+								<p><i></i>北京市大兴区绿地兴贸中心2号楼2单元1512</p>
+							</div>
+							<div class="public_praise lf">
+								<p>口碑值</p>
+								<a href="">482</a>
+							</div>
+							<div class="clear"></div>
+							<div class="company_detail">
+								<p>
+									北京中天创实装饰工程有限公司是京城知名的装修公司, 提供集设计、施工、材料为一体的一站式装修服务，设计新颖、施工优质、物美价廉。 中天装饰始终坚持"以人为本、以绿色环保保障健康为主,以功能实用及装 ...<a href="">更多</a>
+								</p>
+								<ul>
+									<li><a href=""><img src="images/company_032.jpg" alt=""></a>
+										<p class="black_mask">
+											<a href="" class="lf">北苑家园张先生</a>
+											<a href=""class="rt">3张</a>
+										</p>
+									</li>
+									<li><a href=""><img src="images/company_033.jpg" alt=""></a>
+										<p class="black_mask">
+											<a href="" class="lf">芳群园三区王女士</a>
+											<a href=""class="rt">6张</a>
+										</p>
+									</li>
+									<li><a href=""><img src="images/company_034.jpg" alt=""></a>
+										<p class="black_mask">
+											<a href="" class="lf">南海家园李大爷</a>
+											<a href="" class="rt">10张</a>
+										</p>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div id="fourth" class="company_introduce">4</div>
+					<div id="fiveth" class="company_introduce">5</div>
+					<div id="sixth" class="company_introduce">6</div>
+					<div id="seventh" class="company_introduce">7</div>
+					<div id="eighth" class="company_introduce">8</div>
+					<div id="nineth" class="company_introduce">9</div>
+				</div>
+				<!-- 北京装修公司右侧 div id="search_company" -->
+				<div id="search_company" class="product_detail lf">
+					<form action="">
+						<ul class="active_current">
+							<li class="lf current" data-name="#help_me" data-toggle="company">帮我找公司</li>
+							<li class="lf" data-name="#new_signing" data-toggle="company">最新签约公司</li>
+						</ul>
+						<div class="clear"></div>
+						<div id="help_me" class="company_current current">
+							<p class="four_steps">简单4步轻松搞定装修公司</p>
+							<div class="compare_company">
+								<div><b></b><span>看口碑</span></div>
+								<i></i>
+								<div><b></b><span>比方案</span></div>
+								<i></i>
+								<div><b></b><span>比报价</span></div>
+								<i></i>
+								<div><b></b><span>比保障</span></div>
+							</div>
+							<ul class="register">
+								<li>10秒免费登记，坐等装修公司联系您</li>
+								<li><input type="" placeholder="您的称呼"></li>
+								<li><input type="" placeholder="您的称呼"></li>
+								<li>
+									<select name="" id="">
+										<option value="">省/市</option>
+										<option value=""></option>
+										<option value=""></option>
+										<option value=""></option>
+									</select><select name="" id="">
+										<option value="">市/地区</option>
+										<option value=""></option>
+										<option value=""></option>
+										<option value=""></option>
+									</select>
+								</li>
+								<li><button>免费帮您推荐靠谱公司</button></li>
+							</ul>
+						</div>
+						<div id="new_signing" class="company_current">此处省略</div>
+					</form>
+				</div>
+				<div class="clear"></div>
+				<ul class="decorate_bottom">
+					<li class="lf"><a href=""><img src="images/company_111.jpg" alt=""></a></li>
+					<li class="lf"><a href=""><img src="images/company_112.jpg" alt=""></a></li>
+				</ul>
+			</div>
+			<!-- 北京小区案例 div id="bj_plot" -->
+			<div id="bj_plot">	
+				<div class="lf">
+					<p class="decorate_title">
+						<a href="" class="rt">找我家小区&gt;</a>
+						<b>北京小区案例</b>
+						<span>
+							&nbsp;&nbsp;已有417110位业主查看小区真实案例
+						</span>
+					</p>
+					<ul id="plot_building">
+						<li><a href="">
+							<img src="images/plot_01.jpg" alt="">
+							<p class="black_mask"><span class="lf">北京怡园</span>
+							<span class="rt">设计方案1</span></p>	
+						</a></li>
+						<li><a href="">
+							<img src="images/plot_02.jpg" alt="">
+							<p class="black_mask"><span class="lf">K2清水湾</span>
+							<span class="rt">设计方案2</span></p>
+						</a></li>
+						<li><a href="">
+							<img src="images/plot_03.jpg" alt="">
+							<p class="black_mask"><span class="lf">玉泉新城</span>
+							<span class="rt">设计方案3</span></p>
+						</a></li>
+					</ul>
+				</div>
+				<div id="stylist" class="product_detail rt">
+					<ul class="active_current">
+							<li class="current lf">设计师</li>
+							<li class="lf"></li>
+					</ul>
+					<div class="clear"></div>
+					<ul class="stylist_detail">
+						<li>
+							<a href="" class="lf"></a>
+							<div class="lf">
+								<a href="">王刚</a>
+								<p><a href="">案例：4</a>|<a href="">美达轩装饰</a></p>
+							</div>
+						</li>
+						<li>
+							<a href="" class="lf"></a>
+							<div class="lf">
+								<a href="">王玉东</a>
+								<p><a href="">案例：1</a>|<a href="">艺佳居装饰</a></p>
+							</div>
+						</li>
+						<li>
+							<a href="" class="lf"></a>
+							<div class="lf">
+								<a href="">杨静</a>
+								<p><a href="">案例：3</a>|<a href="">克洛尼装饰</a></p>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="clear"></div>
+				<ul class="decorate_bottom">
+					<li class="lf"><a href=""><img src="images/plot_08.jpg" alt=""></a></li>
+					<li class="lf"><a href=""><img src="images/plot_09.jpg" alt=""></a></li>
+				</ul>
+			</div>
+			<!-- 热点新闻 div id="hot_news" -->
+			<div id="hot_news">
+				<p class="decorate_title">
+					<b>热点新闻</b>
+				</p>
+				<!-- 热点新闻面罩部分 div id="society_news" -->
+				<div id="society_news" class="lf">
+					<a href="" class="lf">
+						<img src="images/news_01.jpg" alt="">
+						<div class="mask">
+							<div class="small_tag rt">
+								<i></i>
+								<i></i>
+								<i></i>	
+							</div>
+							<div class="portrait"></div>
+							<h3>材料验收指南</h3>
+							<p>在装修中，不少业主和装修公司，以及建材商发生纠纷很大原因是由于材 ...</p>
+							<p>当监理来敲门 ...</p>
+						</div>
+					</a>
+					<ul class="lf">
+						<li>
+							<a href="">土巴兔工地形象安装 谁说装修工地就得脏乱差？</a>
+							<p>土巴兔工地形象安装 谁说装修工地就得脏乱差？</p>
+						</li>
+						<li>
+							<a href="">湖南现全透明厕所 国外透明厕所大盘点</a>
+							<p>9月29日，湖南长沙石燕湖全透明玻璃厕所建成对外开放，吸引了游人前来参观，但未敢亲身体验。据悉，整个透明玻璃厕所四面八方均由全透明玻璃组建而成，男女厕之间仅一面玻璃之隔，朦胧可见。</p>
+						</li>
+						<li>
+							<a href="">十一彩电市场：电视高端产品、大尺寸将成主流</a>
+							<p>十一期间，将是各彩电厂商冲刺全年目标任务的关键时刻。业内人士预计，十一期间电视高端产品、大尺寸将成为主流。</p>
+						</li>
+						<li>
+							<a href="">小区楼顶违建三层 楼梯半米宽不到盖得又歪又薄</a>
+							<p>29日一大早,京溪街道办城管执法队、东圣社区居委会等部门就来到涉事住宅楼核查情况,不过,当众人一路上到6楼时,却被一道铁门拦住了去路。“那个门是锁住的,我们的人员都被挡在外面,上不去了。”京溪街道办相关负责人说。</p>
+						</li>
+					</ul>
+				</div>
+				<!-- 热点新闻右侧部分 div id="society_news" -->
+				<div id="decorate_news" class="product_detail rt">
+					<ul class="active_current">
+							<li class="current lf">北京新闻</li>
+							<li class="lf">招标信息</li>
+					</ul>
+					<div class="clear"></div>
+					<ul class="bj_news">
+						<li>
+							<b></b>
+							<a href="">北京床上用品厂家与报</a>
+						</li>
+						<li>
+							<b></b>
+							<a href="">北京异地搬家价格是多少</a>
+						</li>
+						<li>
+							<b></b>
+							<a href="">北京空调拆装公司介绍</a>
+						</li>
+						<li>
+							<b></b>
+							<a href="">北京淋浴房厂家盘点</a>
+						</li>
+						<li>
+							<b></b>
+							<a href="">北京空调打孔多少钱</a>
+						</li>
+						<li>
+							<b></b>
+							<a href="">北京二手房交易流程是怎么样</a>
+						</li>
+					</ul>	
+				</div>
+				<div class="clear"></div>
+			</div>
+			<!-- 展会话题 div id="show_topic" -->
+			<div id="show_topic">
+				<p class="decorate_title">
+					<b>展会话题</b>
+				</p>
+				<ul class="decorate_bottom">
+					<li>
+						<a href=""><img src="images/show_01.jpg" alt=""></a>
+					</li>
+					<li>
+						<a href=""><img src="images/show_02.jpg" alt=""></a>
+					</li>
+					<li>
+						<a href=""><img src="images/show_03.jpg" alt=""></a>
+					</li>
+					<li>
+						<a href=""><img src="images/show_04.jpg" alt=""></a>
+					</li>
+					<li>
+						<a href=""><img src="images/show_05.jpg" alt=""></a>
+					</li>
+					<li>
+						<a href=""><img src="images/show_06.jpg" alt=""></a>
+					</li>
+				</ul>
+				<div class="clear"></div>
+			</div>
+		</section>
+		<!-- 页面底部-1 footer>div id="foot_box" -->
+		<footer id="footer_01">
+			<div id="foot_box">
+				<div id="foot_text" class="lf">
+					<a href="" class="rt">友链合作&gt;</a>
+					<ul class="foot_box_title">
+						<li class="foot_current"><a href="">友情链接</a></li>
+						<li><a href="">热门城市</a></li>
+						<li><a href="">附近城市</a></li>
+					</ul>
+					<p class="line"></p>
+					<ul class="foot_box_detail">
+						<li><a href="">建材网</a></li>
+						<li><a href="">福州房地产</a></li>
+						<li><a href="">个人房源网</a></li>
+						<li><a href="">装修论坛</a></li>
+						<li><a href="">北京信息网</a></li>
+						<li><a href="">北京房产网</a></li>
+						<li><a href="">装修设计</a></li>
+						<li><a href="">北京婚纱摄影</a></li>
+						<li><a href="">卫浴加盟</a></li>
+						<li><a href="">绍兴柯桥轻纺城</a></li>
+					</ul>
+				</div>
+				<div id="Qr_code" class="rt">
+					<div class="code_img lf">
+						<span>关注我们</span>
+						<i></i>
+					</div>
+					<div class="code_text rt">
+						<span>下载土巴兔APP</span>
+						<i></i>
+					</div>	
+				</div>
+			</div>
+		</footer>
+		<!-- 页面底部-2 footer>div id="footer" -->
+		<div id="footer"></div>
+		<div class="modal"></div>
+		<div class="modal-quit"></div>
+		<script src="js/jquery-1.11.3.js"></script>
+		<script src="js/index.js"></script>
+		<script src="js/common.js"></script>
+	</body>
+</html>

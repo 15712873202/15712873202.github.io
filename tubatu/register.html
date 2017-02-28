@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>土巴兔注册页</title>
+  <link rel="stylesheet" href="css/common.css"/>
+  <link rel="stylesheet" href="css/register.css"/>
+</head>
+<body>
+	<div id="header"></div>
+	<div class="dividing-line"></div>
+	<section id="main">
+	  <h1>欢迎注册</h1>
+	  <div class="register-box lf">
+		 <form id="form-register">
+			<p class="form-group">
+			  <label for="uname"><span>*</span>用户名：</label>
+			  <input id="uname" name="uname" type="text" placeholder="请输入用户名" mixlength="6" maxlength="20"/>
+			  <span class="comment">6-20位，不能以数字开头</span>
+			</p>
+			<p class="form-group">
+			  <label for="upwd"><span>*</span>用户密码：</label>
+			  <input id="upwd" name="upwd" type="password" placeholder="请输入密码" mixlength="6" maxlength="12"/>
+			  <span class="comment">密码长度6-12位</span>
+			</p>
+			<p class="form-group">
+			  <label for="reupwd"><span>*</span>确认密码：</label>
+			  <input id="reupwd" name="reupwd" type="password" placeholder="请再次输入密码" mixlength="6" maxlength="12"/>
+			  <span class="comment">俩次输入密码必须相同</span>
+			</p>
+			<p class="form-group">
+			  <label for="tel"><span>*</span>手机号码：</label>
+			  <input id="tel" name="tel" placeholder="请输入手机号码"/>
+			  <span class="comment">手机号码必须有效</span>
+			</p>
+			<p class="form-group">
+			  <label for="email"><span>*</span>邮箱：</label>
+			  <input id="email" name="email" type="email" placeholder="请输入邮箱"/>
+			  <span class="comment">邮箱格式必须有效</span>
+			</p>
+			<p class="form-group">
+			  <label for="authcode"><span>*</span>验证码：</label>
+			  <input id="authcode" name="authcode"  type="text" placeholder="请输入验证码"/>
+			  <img class="code-img" src="php/0_register_vcode.php"/>
+			  <b class="change-img">换一张</b>
+			</p>
+			<p class="form-group">
+			  <label for="authcode" name="uname"></label>
+			  <button id="bt-register"  type="button">立即注册</button>
+			</p>
+		 </form>
+	  </div>
+	  <div class='lf register-bg'>
+	  <img src="images/register-bg.jpg"></div>
+	</section>
+	<div class="modal-register">
+	  <div class="modal-dialog">
+		 <div class="modal-content">
+			<h2>注册成功</h2>
+			<a class="btn btn-success" href="index.html">土巴兔首页</a>
+			<a class="btn btn-danger" href="detail.html">土巴兔详情页</a>
+		 </div>
+	  </div>
+	</div>
+	<div id="footer" class='clear'></div>
+	<div class="modal"></div>
+	<div class="modal-quit"></div>
+	<script src="js/jquery-1.11.3.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/register.js"></script>
+</body>
+</html>

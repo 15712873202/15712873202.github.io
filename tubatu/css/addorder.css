@@ -1,0 +1,351 @@
+#main{
+   padding: 10px 20px;
+   box-sizing: border-box;
+   font-size: 14px;
+}
+/*********************�ջ���ַdiv class='address'*******************/
+.address,.payment{
+   margin: 20px 0;
+   border-bottom: 2px solid #eee;
+   overflow: hidden;
+}
+.user-address{
+   height:220px;
+   float: left;
+}
+.user-address .btn{
+   padding: 2px 15px;
+   margin-left: 5px;
+}
+.default-address,.add-address{
+    width: 270px;
+    height: 110px;
+    margin:0 20px 10px 0;
+    padding: 20px;
+    border: 2px solid #CCCCCC;
+ }
+.default-address{
+   position: relative;
+}
+.default-address .selected{
+   width: 34px;
+   height: 34px;
+   display: inline-block;
+   background: url("../images/icon.png") no-repeat 0 -318px;
+   position: absolute;
+   bottom: -2px;
+   right: -2px;
+   display: none;
+}
+.user-address .btn{
+   display: none;
+}
+.address-box .selected.all-default-use,.address-box .btn.all-default-use,.address-box .lace.all-default-use{
+   display: block;
+}
+.address-box .selected.hover,.address-box .btn.hover,.address-box .lace.hover{
+   display: block;
+}
+/***********Ĭ�ϵ�ַ**********/
+.default-use .to-default{
+   color: #01AF63;
+}
+/*���� div class='lace'*/
+.default-address .lace{
+   position: absolute;
+   display: none;
+}
+.align{
+   width: 280px;
+   height: 4px;
+   background:url("../images/align.jpg") repeat-x;
+   left: 16px;
+}
+.align-top{
+   top:0px;
+}
+.align-bottom{
+   bottom: 0px;
+}
+.vertical{
+   width: 4px;
+   height: 120px;
+   background:url("../images/vertical.jpg") repeat-y;
+   top: 13px;
+}
+.vertical-left{
+   left: 0px;
+}
+.vertical-right{
+   right: 0px;
+}
+/*������ϸ��ַ ul class='detail-address'*/
+.detail-address li{
+   line-height: 30px;
+   padding: 5px 0;
+   position: relative;
+}
+.detail-address li i{
+   display: inline-block;
+   width: 13px;
+   height: 18px;
+   background: url("../images/icon.png") no-repeat -14px -352px;
+   position: relative;
+   top: 7px;
+   margin-right: 10px;
+}
+.detail-address li:first-child i{
+   background-position: 0 -352px;
+}
+.detail-address li:last-child i{
+   background-position: -28px -352px;
+}
+.detail-address li:not(:last-child){
+   border-bottom: 1px solid #ccc;
+}
+/*�����ջ���ַ div class='add-address'*/
+.add-address span{
+   font-size: 40px;
+   line-height: 25px;
+}
+.add-address p{
+   font-size: 18px;
+}
+.add-address div{
+   color: #999;
+   margin-top: 44px;
+}
+.add-address{
+   text-align: center;float: left;
+}
+/*********************֧����ʽdiv class='payment*******************/
+.payment a{
+   display: inline-block;
+   width: 100px;
+   height: 30px;
+   line-height: 30px;
+   text-align: center;
+   margin-right: 10px;
+   margin-bottom: 10px;
+   border: 2px solid #Eee;
+}
+.payment a.current{
+   border-color: #E81A62;
+}
+/************�����ջ���ַģ̬��div class='address-modal*************/
+.address-modal{
+   position: fixed;
+   left: 0;
+   right: 0;
+   top: 0;
+   bottom: 0;
+   background: rgba(0,0,0, .3);
+   z-index: 9999;
+   display: none;
+}
+.address-modal-dialog{
+   width: 400px;
+   min-height: 100px;
+   padding:0 20px 1px;
+   margin: 100px auto;
+   background: #fff;
+}
+.address-modal-content>p{
+   line-height: 30px;
+   margin-bottom: 10px;
+}
+.address-modal-content>p span{
+   font-size: 18px;
+}
+.address-modal-content>p a{
+   font-size: 30px;
+   color: #999;
+}
+.address-detail select,.address-detail input,.address-detail button{
+   width: 300px;
+   height: 30px;
+   line-height: 30px;
+   box-sizing: border-box;
+   padding: 0 10px;
+}
+.address-detail select{
+    width: 146px;
+    margin-right: 5px;
+ }
+.address-detail em{
+   color: #E81A62;
+}
+.address-detail p span{
+   display: inline-block;
+   width: 70px;
+   text-align: right;
+   margin-right: 20px;
+}
+.address-detail p b{
+   font-weight: normal;
+   margin-left: 110px;
+   line-height: 18px;
+   display: none;
+}
+.address-detail p b i{
+   font-style: normal;
+   line-height: 18px;
+   background: #E81A62;
+   border-radius: 50%;
+   padding:0 4px;
+   margin-right: 5px;
+   color: #fff;
+}
+.address-detail p{
+   margin-bottom: 10px;
+}
+
+/************��Ʊ��Ϣdiv class='invoice*************/
+.modify{
+   font-size: 24px;
+   color:#01AF63;
+   cursor: pointer;
+   line-height: 30px;
+}
+.invoice,.default-invoice{
+   border-top: 2px solid #bbb;
+   background: #f8f8f8;
+   padding: 20px;
+   margin: 10px  0 20px;
+   display: none;
+}
+.invoice.default,.default-invoice.default{
+   display: block;
+}
+.invoice i{
+   font-style: normal;
+}
+.invoice .btn{
+   padding: 2px 15px;
+}
+.invoice span,.default-invoice span:first-child{
+   display: inline-block;
+   width: 100px;
+   margin-right: 10px;
+   text-align: right;
+}
+.default-invoice span:first-child{
+   margin-right: 30px;
+}
+#no-invoice,#common-invoice,#vat-invoice{
+   display: none;
+}
+#no-invoice.checked,#common-invoice.checked,#vat-invoice.checked{
+   display: block;
+   margin-top: 20px;
+}
+.invoice div:not(:first-child) input{
+   height: 25px;
+   width: 400px;
+   padding-left: 15px;
+}
+.invoice div p,.default-invoice p{
+   margin-bottom: 10px;
+}
+/************ȷ�϶�����Ϣdiv class='order-info'*************/
+.list-item{
+   background: #f8f8f8;
+   height: 40px;
+   margin:10px 0 40px;
+}
+.list-item li{
+   float: left;
+   width: 20%;
+   text-align: center;
+   height: 40px;
+   line-height: 40px;
+   font-size: 20px;
+}
+.list-item li:first-child{
+   width: 40%;
+}
+.list-order{
+   width: 100%;
+   border-top: 3px solid #bbb;
+   border-bottom: 2px solid #eee;
+   font-size: 16px;
+   border-collapse: collapse;
+}
+.list-order tbody{
+   background: #F4FFF9;
+}
+.list-order tbody td{
+   width: 20%;
+   padding: 10px 0;
+   text-align: center;
+}
+.list-order tbody td:first-child{
+   width: 40%;
+}
+.list-order tbody tr{
+   border-bottom: 1px solid #c2dAcA;
+}
+.list-order tbody tr td:first-child{
+   text-align: left;
+   padding-left: 100px;
+}
+.list-order tfoot{
+   width: 100%;
+   vertical-align: middle;
+}
+.list-order tfoot td{
+   width: 100%;
+   background: #f8f8f8;
+   padding: 10px 40px;
+}
+.list-order p{
+   text-align: right;
+}
+.list-order tfoot span{
+   color: #E81A62;
+   font-size: 20px;
+}
+.list-order tfoot textarea{
+   width: 400px;
+   height: 25px;
+   line-height: 25px;
+   padding: 3px 15px 3px;
+   position: relative;
+   top: 11px;
+}
+/****************�ύ���� div class='submit-orders'***************/
+.submit-orders{
+   width: 100%;
+   height: 60px;
+   text-align: right;
+   font-size: 20px;
+   margin: 20px auto;
+   line-height: 60px;
+}
+.submit-orders.submit-fixed{
+   position: fixed;
+   bottom: 0px;
+   background: #F8F8F8;
+   left: 0px;
+   margin-bottom: 0px;
+}
+.submit-orders .submit-price{
+   font-size: 24px;
+   color: #E81A62;
+}
+.submit-orders a{
+   width: 150px;
+   height: 40px;
+   line-height: 30px;
+   font-weight: 700;
+   font-size: 20px;
+   margin-left: 20px;
+}
+
+
+
+
+
+
+
+

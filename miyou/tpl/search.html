@@ -1,0 +1,170 @@
+
+  <!-- 引入页面头部-->
+  <div ng-include="'tpl/header.html'"></div>
+  <!-- 广告-->
+  <div class="banner">
+    <img class="img-responsive" src="images/banner.jpg">
+    <div class="banner-title center-block">
+      <h1>东京</h1>
+      <h4>绚烂都市，人文美景</h4>
+    </div>
+  </div>
+  <!-- 更多好玩-->
+  <div id="morehot">
+    <div class="container">
+      <h1>更多好玩</h1>
+      <div class="search row">
+        <div class="col-xs-12 col-md-8 col-md-offset-2">
+          <div class="input-group">
+            <input ng-model="kw" type="text" class="form-control" placeholder="搜索关键字：1日游/迪士尼/亲子/温泉/专车等">
+            <span class="input-group-addon" ng-click="search()">搜索</span>
+          </div>
+        </div>
+      </div>
+      <br/><br/>
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-4 search-info" ng-repeat="h in hotList" ng-click="goTo('/detail/'+h.hid)">
+            <!--<a href="#">-->
+              <img ng-src="{{h.pic}}" width='100%' height='60%'>
+            <!--</a>-->
+            <div class="hot-box">
+              <h4 class="text-left">{{h.title}}</h4>
+              <div class="row">
+                <div class="col-xs-6 text-left">
+                  <div>{{h.destination}}</div>
+                  <br/>
+                  <div>{{h.buyed}}人已购买</div>
+                </div>
+                <div class="col-xs-6 text-right">
+                  <div>
+                    <s>￥{{h.vprice}}</s>
+                    <div class="color">￥{{h.disprice}}</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <br/><br/>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <button class="btn btn-success btn-block" ng-show="hasMore" ng-click="loadMore()">加载更多</button>
+          <button class="btn btn-danger btn-block" ng-show="noMore">抱歉，没有数据可加载了...</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--推荐游玩线路-->
+  <div id="route">
+    <div class="container">
+      <h1>推荐游玩线路</h1>
+      <h4>最棒的游玩线路都在这里啦</h4>
+      <br/><br/>
+      <div class="row text-left">
+        <div class="col-xs-12 col-lg-5">
+          <a>
+            <img class="img-responsive" src="images/media-01.jpg">
+          </a>
+          <br/><br/>
+        </div>
+        <div class="col-xs-12 col-lg-7">
+          <div>
+            <h3 class="media-heading">镰仓传统1日游</h3>
+            <span>城市经典&nbsp;&nbsp;人文艺术</span>
+          </div>
+          <hr/>
+          <div class="route-detail">
+            <ul class="list-unstyled">
+              <li>第1站 钱洗弁财天宇贺福神社</li>
+              <li>第2站 镰仓大佛</li>
+              <li>第3站 长谷寺</li>
+              <li>第4站 鹤冈八幡宫</li>
+            </ul>
+          </div>
+          <div>
+            <span class="buyed">268</span>人购买&nbsp;&nbsp; <span class="price">￥1750/车</span>
+          </div>
+          <br/><br/>
+        </div>
+      </div>
+      <div class="row text-left">
+        <div class="col-xs-12 col-lg-5 col-lg-push-7">
+          <a>
+            <img class="img-responsive" src="images/media-02.jpg">
+          </a>
+          <br/><br/>
+        </div>
+        <div class="col-xs-12 col-lg-7 col-lg-pull-5">
+          <div>
+            <h3 class="media-heading">东京周边亲子一日之动漫迷首选</h3>
+            <span>亲子互动&nbsp;&nbsp;主题乐园</span>
+          </div>
+          <hr/>
+          <div class="route-detail">
+            <ul class="list-unstyled">
+              <li>第1站 忍者村</li>
+              <li>第2站 HelloKitty馆</li>
+              <li>第3站 海贼王主题乐园</li>
+            </ul>
+          </div>
+          <div>
+            <span class="buyed">239</span>人购买&nbsp;&nbsp; <span class="price">￥2100/车</span>
+          </div>
+          <br/><br/>
+        </div>
+      </div>
+      <div class="row text-left">
+        <div class="col-xs-12 col-lg-5">
+          <a>
+            <img class="img-responsive" src="images/media-01.jpg">
+          </a>
+          <br/><br/>
+        </div>
+        <div class="col-xs-12 col-lg-7">
+          <div>
+            <h3 class="media-heading">东京1日缤纷之旅</h3>
+            <span>城市经典&nbsp;&nbsp;美容购物&nbsp;&nbsp;浪漫之地</span>
+          </div>
+          <hr/>
+          <div class="route-detail">
+            <ul class="list-unstyled">
+              <li>第1站 东京塔</li>
+              <li>第2站  台场海滨公园</li>
+              <li>第3站 彩虹大桥</li>
+              <li>第4站 调色板城</li>
+            </ul>
+          </div>
+          <div>
+            <span class="buyed">241</span>人购买&nbsp;&nbsp; <span class="price">￥1400/车</span>
+          </div>
+        </div>
+      </div>
+      <div class="row text-left">
+        <div class="col-xs-12 col-lg-5 col-lg-push-7">
+          <a>
+            <img class="img-responsive" src="images/media-01.jpg">
+          </a>
+          <br/><br/>
+        </div>
+        <div class="col-xs-12 col-lg-7 col-lg-pull-5">
+          <div>
+            <h3 class="media-heading">狂扫轻井泽奥莱 爆买东京2日游</h3>
+            <span>美容购物</span>
+          </div>
+          <hr/>
+          <div class="route-detail">
+            <ul class="list-unstyled">
+              <li>第1站 东京-轻井泽 轻井泽王子购物广场</li>
+              <li>第2站 东京 新宿 - 秋叶原 - 银座中央街</li>
+            </ul>
+          </div>
+          <div>
+            <span class="buyed">268</span>人购买&nbsp;&nbsp; <span class="price">￥1750/车</span>
+          </div>
+          <br/><br/>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 引入页面尾部-->
+  <div ng-include="'tpl/footer.html'"></div>

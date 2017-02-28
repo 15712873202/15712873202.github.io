@@ -1,0 +1,270 @@
+body{
+   margin-top: 50px;
+}
+
+
+/***start 部分****/
+/*导航*/
+.navbar a{
+   background: #222 !important;
+   color: #fff;
+}
+.navbar li.active a,.navbar a:hover{
+   color: #F93A35 !important;
+}
+.logo{
+   margin-top: -9px;
+}
+
+/*banner部分*/
+#carousel-example-generic{
+   position: relative;
+}
+#carousel-example-generic .search{
+   position: absolute;
+   height: 120px;
+   background: rgba(0,0,0,.5);
+   bottom: 10px;
+}
+#carousel-example-generic .input-group{
+   margin-top: 30px;
+   height: 40px;
+}
+#carousel-example-generic .input-group .input-group-addon,#carousel-example-generic .input-group .form-control{
+  height: 60px;
+   padding:10px 30px ;
+   font-size: 24px;
+}
+#carousel-example-generic .input-group .input-group-addon{
+   background: #F93A35;
+   color: #fff;
+}
+
+/*人气精选目的地*/
+#destination{
+   background: #F6F6F6;
+   padding: 60px 0;
+}
+#destination .carousel-caption{
+   transform: scale(0);
+   transition: transform 2s;
+}
+#destination .destination-item:hover .carousel-caption{
+   transform: scale(1);
+}
+/*旅行服务*/
+#service{
+   background:url("../images/service.jpg");
+}
+#service .service-box,#partner .partner-box{
+   border: 1px solid #fff;
+   padding: 20px;
+   position: relative;
+   color: #fff;
+}
+.service-mask{
+   position: absolute;
+   top: 0;
+   bottom: 0px;
+   left: 0px;
+   right: 0px;
+   background: rgba(0,0,0,.2);
+   display: none;
+}
+#service .service-box:hover .service-mask{
+   display: block;
+}
+
+/*热门自由行*/
+#free{
+   padding: 60px 0;
+}
+@media (min-width:768px) and (max-width:1199px){
+   #free .free-item {
+      height: 640px;
+   }
+}
+@media (min-width:1200px) {
+   #free .free-item {
+      height: 530px;
+   }
+}
+#free .free-box{
+   border: 1px solid #eee;
+   padding: 0 15px 10px;
+   background: #fff;
+   position: relative;
+   top: 0px;
+ }
+#free .free-box .color{
+   font-size: 24px;
+   color:#F93A35;
+   margin-top: 10px;
+}
+.free-hidden{
+   line-height: 24px;
+}
+
+/*footer*/
+#footer{
+   color: #fff;
+   background: #242424;
+   margin-top: 60px;
+   padding: 30px 0;
+}
+#footer a{
+   color: #A3A3A3;
+}
+
+
+
+/***search 部分***/
+/*广告*/
+.banner{
+   position: relative;
+}
+.banner-title{
+   color: #fff;
+   margin-top: -150px;
+}
+/*更多好玩*/
+#morehot{
+   margin-top: 90px;
+}
+#morehot .color{
+   font-size: 20px;
+   color:#F93A35;
+   margin-top: 10px;
+}
+.hot-box{
+   border: 1px solid #ccc;
+   padding: 10px;
+}
+#morehot .input-group{
+   margin-top: 30px;
+   height: 40px;
+}
+#morehot .input-group-addon,#morehot .form-control{
+   height: 60px;
+   padding:10px 30px ;
+   font-size: 24px;
+}
+#morehot .input-group-addon{
+   background: #F93A35;
+   color: #fff;
+}
+@media (min-width:768px) {
+	.search-info{
+		height:370px;
+	}
+}
+@media (min-width:501px) and (max-width:767px) {
+	.search-info{
+		height:350px;
+	}
+}
+@media (max-width:500px) {
+	.search-info{
+		height:410px;
+	}
+}
+
+/*推荐游玩线路*/
+#route{
+   background: #F6F6F6;
+   padding: 30px 0;
+   margin-top: 30px;
+}
+#route .row{
+   background: #fff;
+   padding: 20px;
+}
+.route-detail{
+   height: 170px;
+   font-size: 20px;
+}
+.route-detail li{
+   line-height: 36px;
+}
+.price,.buyed{
+   font-size: 36px;
+   color: #F93A35;
+}
+
+
+
+/***detail 部分***/
+#detail{
+   background: #F6F6F6;
+}
+/*广告部分*/
+.detail-banner>.container{
+   background: #fff;
+   padding: 40px;
+}
+.detail-banner .tickets-price{
+   font-size: 24px;
+   color: #F93A35;
+}
+.detail-banner .btn{
+   margin-bottom: 20px;
+}
+#detail .star{
+   display: inline-block;
+   height: 15px;
+   width: 15px ;
+   background: url("../images/star.png");
+}
+#detail .scan{
+   position: relative;
+   display: inline-block;
+}
+#detail .scan-jump{
+   width: 160px;
+   height: 180px;
+   padding: 10px;
+   background: url("../images/scan_bg.png");
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+   position: absolute;
+   z-index: 100;
+   display: none;
+}
+#detail .scan:hover .scan-jump{
+   display: block;
+}
+
+/*景点攻略*/
+.travel-tips{
+   background: #fff;
+}
+
+/*购买须知*/
+.buy-info,.travel-tips,.price-detail{
+   padding-top: 40px;
+}
+
+
+/***order 部分***/
+table{
+   border-top: 2px solid #aaa;
+   border-bottom: 2px solid #aaa;
+}
+table th{
+   text-align: center;
+}
+.total-price{
+   font-size: 30px;
+   color: #F93A35;
+}
+table a{
+   color: #333;
+   font-size: 20px;
+   font-weight: bold;
+}
+table a:hover{
+   color: #D9534F;
+}
+table .calc{
+   width: 40px;
+}

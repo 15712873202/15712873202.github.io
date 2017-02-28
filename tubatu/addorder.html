@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>土巴兔订单页</title>
+  <link rel="stylesheet" href="css/common.css"/>
+  <link rel="stylesheet" href="css/addorder.css"/>
+</head>
+<body>
+<div id="header"></div>
+<div class="dividing-line"></div>
+<div class="progress-bills">
+  <ul>
+    <li class="current">
+      <b>1</b>
+      <p>查看购物车</p>
+    </li>
+    <li class="current">
+      <b>2</b>
+      <p>确认订单信息</p>
+    </li>
+    <li>
+      <b>3</b>
+      <p>成功提交订单</p>
+    </li>
+  </ul>
+  <p></p>
+</div>
+<section id="main">
+  <form id="form-order">
+    <input name="uname" type="hidden"/>
+  </form>
+  <h2>收货地址</h2>
+  <div class="address">
+    <div class="address-box"></div>
+    <!--<div class="user-address">
+      <div class="default-address">
+        <span class="lace align align-top"></span>
+        <span class="lace align align-bottom"></span>
+        <span class="lace vertical vertical-left"></span>
+        <span class="lace vertical vertical-right"></span>
+        <ul class="detail-address">
+          <li>
+            <a class="rt">设为默认</a>
+            <span class="name"><i></i>张三</span>
+          </li>
+          <li><i></i>13716182835</li>
+          <li><i></i>地址</li>
+        </ul>
+        <i class="selected"></i>
+      </div>
+      <p >
+        <button class="rt btn btn-danger">删除</button>
+      </p>
+    </div>-->
+    <div class="add-address">
+      <div>
+        <span>+</span>
+        <p>添加地址</p>
+      </div>
+    </div>
+  </div>
+  <h2>支付方式</h2>
+  <input form="form-order" type="hidden" name="payment" value="1"/>
+  <div class="payment">
+    <a href="#" class="current">支付宝支付</a>
+    <a href="#">微信支付</a>
+    <a href="#">货到付款</a>
+    <a href="">银行卡支付</a>
+  </div>
+  <h2>发票信息&nbsp;&nbsp;<span class="modify">[修改]</span></h2>
+  <div class="default-invoice default">
+    <p>
+      <span>发票类型</span>
+      <span>不要发票</span>
+    </p>
+  </div>
+  <div class="invoice">
+    <div class="select-invoice">
+      <span>发票类型</span>
+      <input type="radio" data-toggle='#no-invoice' name="invoice"/>
+      <i>不要发票</i>
+      <input type="radio" data-toggle='#common-invoice' name="invoice"/>
+      <i>普通发票</i>
+      <input type="radio" data-toggle='#vat-invoice' name="invoice"/>
+      <i>增值税发票</i>
+    </div>
+    <div id="no-invoice" class="checked">
+      <span></span>
+      <button type="button" class="btn btn-success">保存</button>
+    </div>
+    <div id='common-invoice'>
+      <p>
+        <span>发票抬头</span>
+        <input id="user" placeholder="个人/公司名称">
+      </p>
+      <p>
+        <span></span>
+        <button type="button" class="btn btn-success">保存</button>
+      </p>
+    </div>
+    <div id="vat-invoice">
+      <p>
+        <span>单位名称</span>
+        <input name="company" id="company"/>
+      </p>
+      <p>
+        <span>纳税人识别号</span>
+        <input name="" id=""/>
+      </p>
+      <p>
+        <span>开户银行</span>
+        <input name="" id=""/>
+      </p>
+      <p>
+        <span>银行账户</span>
+        <input name="" id=""/>
+      </p>
+      <p>
+        <span></span>
+        <button type="button" class="btn btn-success">保存</button>
+      </p>
+    </div>
+  </div>
+    <h2>确认订单信息</h2>
+    <ul class="list-item">
+      <li>商品信息</li>
+      <li>单价（元）</li>
+      <li>数量</li>
+      <li>小计（元）</li>
+    </ul>
+    <table class="list-order">
+      <tbody>
+        <!--<tr>
+          <td>
+            <img src="images/lashbed/lashbed_26.png" width="50" >
+            <span>千彩居 地中海双层子母床 DTBB-K2208</span>
+          </td>
+          <td>199.00</td>
+          <td>2</td>
+          <td>398.00</td>
+        </tr>-->
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="4">
+            <div class="lf">
+              订单备注 &nbsp;<textarea maxlength="50">若需要延迟发货请备注具体日期，限制50个字</textarea>
+              &nbsp;您还可以输入<span>50</span>个字
+            </div>
+            <div class="rt">
+              <p>总运费：<span class="submit-freight">0.00</span></p>
+              <p>合计金额(含运费)：<span class="submit-price">0.00</span></p>
+            </div>
+          </td>
+        </tr>
+      </tfoot>
+    </table>
+  <div class="submit-orders">
+    应付总额： <span class="submit-price">0.00</span>元
+    <a class="btn btn-danger ">提交订单</a>
+    <input form="form-order" name="price" value="" type="hidden"/>
+  </div>
+  <input form="form-order" name="productList" value="" type="hidden"/>
+</section>
+<div id="footer"></div>
+<div class="modal"></div>
+<div class="address-modal">
+  <div class="address-modal-dialog">
+    <div class="address-modal-content">
+      <p>
+        <a class="rt delete-modal">&times;</a>
+        <span>增加地址</span>
+      </p>
+      <div class="address-detail">
+        <p>
+          <span><em>*</em> 所在地区</span>
+          <select id="provs" name='provs'>
+            <option value="">请选择</option>
+            <option value="安徽">安徽</option>
+            <option value="辽宁">辽宁</option>
+            <option value="江苏">江苏</option>
+            <option value="浙江">浙江</option>
+            <option value="河北">河北</option>
+            <option value="北京">北京</option>
+            <option value="天津">天津</option>
+          </select>
+          <select id="cities" name="cites">
+            <option value="">请选择</option>
+          </select>
+          <br/><br/>
+          <b><i>&times;</i>请填写配送地区</b>
+        </p>
+        <p>
+          <span><em>*</em> 详细地址</span>
+          <input required name="address"/>
+          <br/><br/>
+          <b><i>&times;</i>请填写详细地址</b>
+        </p>
+        <p>
+          <span><em>*</em> 收货人姓名</span>
+          <input required name="uname"/>
+          <br/><br/>
+          <b><i>&times;</i>请填写收货人姓名</b>
+        </p>
+        <p>
+          <span><em>*</em> 手机号码</span>
+          <input required name="telphone"/>
+          <br/><br/>
+          <b><i>&times;</i>请填写手机号码</b>
+        </p>
+        <p>
+          <span></span>
+          <button class="btn btn-success save-address" type="button">保存收货人信息</button>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal-quit"></div>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/common.js"></script>
+<script src="js/addorder.js"></script>
+</body>
+</html>

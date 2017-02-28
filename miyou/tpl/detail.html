@@ -1,0 +1,176 @@
+<div id="detail" class="text-left">
+   <!-- 引入页面头部-->
+   <div ng-include="'tpl/header.html'"></div>
+   <!-- 广告-->
+   <div class="detail-banner">
+      <div class="container">
+         <h1 class="text-left">{{dList.title}}</h1>
+         <h4>
+            {{dList.destination}}
+            &nbsp;&nbsp;&nbsp;
+            <span class="star"></span>
+            <span class="star"></span>
+            <span class="star"></span>
+            <span class="star"></span>
+            <span class="star"></span>
+            &nbsp;&nbsp;&nbsp;
+            {{dList.buyed}}人已购买
+            &nbsp;&nbsp;&nbsp;
+            分享：
+            <span class="scan">
+               <img src="images/scan.jpg" >
+               <div class="scan-jump">
+                  <img src="images/attention-01.jpg" width="100%" height="100%">
+               </div>
+            </span>
+         </h4>
+         <br/>
+         <div class="row">
+            <div class="col-xs-12 col-sm-8">
+               <img class="img-responsive" ng-src="{{dList.pic}}">
+               <br/><br/>
+                  <div class="col-xs-10 col-xs-offset-1">
+                     {{dList.subtitle}}
+                  </div>
+            </div>
+            <div class="col-xs-12 col-sm-4">
+               <div class="row">
+                  <div class="col-xs-12">
+                     成人: <span class="tickets-price">￥{{dList.price|number:0}}</span> &nbsp;&nbsp;儿童：<span class="tickets-price">￥0</span>
+                  </div>
+               </div>
+               <hr/>
+               <div class="row">
+                  <div class="col-xs-12">
+                     <button class="btn btn-block btn-success"  ng-click="addOrder(dList.hid)">加入订单</button>
+                  </div>
+                  <div class="col-xs-12">
+                     <button class="btn btn-block btn-primary" ng-click="goTo('/search')">我在看看</button>
+                  </div>
+                  <div class="col-xs-12">
+                     <button class="btn btn-block btn-danger" ng-click="goTo('/order')">去结算</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- 费用说明-->
+   <div class="price-detail">
+      <div class="container">
+         <div class="row">
+            <div class="col-xs-12 col-sm-3">
+               <h1>费用说明</h1>
+            </div>
+            <div class="col-xs-12 col-sm-9 text-left">
+               <div class="media">
+                  <div class="media-left">
+                     <img src="images/price-contain.jpg"/>
+                  </div>
+                  <div class="media-body">
+                     迪士尼一日通票
+                  </div>
+               </div>
+               <hr/>
+               <div class="media">
+                  <div class="media-left">
+                     <img src="images/price-noncontain.jpg"/>
+                  </div>
+                  <div class="media-body">
+                     其他一切未提及费用
+                  </div>
+               </div>
+            </div>
+         </div>
+         <br/><br/>
+      </div>
+   </div>
+   <!--景点攻略-->
+   <div class="travel-tips">
+      <div class="container">
+         <div class="row">
+            <div class="col-xs-12 col-sm-3">
+               <h1>景点攻略</h1>
+            </div>
+            <div class="col-xs-12 col-sm-9">
+               <div class="row">
+                  <div class="col-xs-12">
+                     <img class="img-responsive" ng-src="{{dList.pic1}}">
+                     <h3>{{dList.text1}}</h3>
+                     <div>
+                        {{dList.ptitle}}
+                     </div>
+                     <br/>
+                  </div>
+                  <div class="col-xs-12">
+                     <img class="img-responsive" src="{{dList.pic2}}">
+                     <h3>{{dList.text2}}</h3>
+                  </div>
+                  <div class="col-xs-12">
+                     <img class="img-responsive" src="{{dList.pic3}}">
+                     <h3>{{dList.text3}}</h3>
+                  </div>
+                  <div class="col-xs-12">
+                     <img class="img-responsive" src="{{dList.pic4}}">
+                     <h3>{{dList.text4}}</h3>
+                     <br/>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!--购买须知-->
+   <div class="buy-info">
+      <div class="container">
+         <div class="row">
+            <div class="col-xs-12 col-sm-3">
+               <h1>购买须知</h1>
+            </div>
+            <div class="col-xs-12 col-sm-9 text-left">
+               <div class="media">
+                  <div class="media-left">
+                     <img src="images/quit-regular.jpg"/>
+                  </div>
+                  <div class="media-body">
+                     预定后取消或修改订单将无法退款。
+                  </div>
+               </div>
+               <hr/>
+               <div class="media">
+                  <div class="media-left">
+                     <img src="images/order-info.jpg"/>
+                  </div>
+                  <div class="media-body">
+                     <p>友情提示：迪士尼分为SEA&LAND，即海上乐园和迪士尼乐园，一日通票可以2选1进行游玩。</p>
+                     <p>12岁以上请购买成人票，12岁以下请购买儿童票。</p>
+                     <p>自2014年11月起，所有门票产品将均以电子票的形式发送至用户的邮箱中，用户需自行打印，持打印后的门票直接进场。</p>
+                     <p>官网部分商品（如，韩国接送机产品）仅限持中国大陆护照的客人预订，港澳台及外籍护照客人如需下单，请先咨询客服，敬请谅解。</p>
+                     <p>蜜柚提供的用车类商品，费用不含上岛或跨海车辆的轮渡费及船票；除费用包含提及项目外，不含客人门票、餐饮费用及其他个人消费。</p>
+                  </div>
+               </div>
+               <hr/>
+               <div class="media">
+                  <div class="media-left">
+                     <img src="images/warming-info.jpg"/>
+                  </div>
+                  <div class="media-body">
+                     <p>1、本产品不包含发票服务，如需要，请联系客服确认相关细节。发票仅在您出行之后才会开具，请知悉。</p>
+                     <p>2、蜜柚建议您可根据自身需求，进行其他增值个人境外旅游保险购买。若您因自身原因决定不购买，将自愿承担因未购买保险造成的一切后果。</p>
+                     <p>3、行程确认单将会在您出发前以邮件或短信的方式发送给您，请在出行前记下蜜柚客服和当地服务人员联系电话电话，以便应对突发情况。</p>
+                     <p>4、机票酒店信息实时变动，请以客服核价以及实际行程单为准。</p>
+                     <p>5、客户需自备有效证件及目的地签证出行，如需蜜柚代办，请购买相关产品。是否给予签证或签注、是否准予出入境，是使领馆及有关部门的权力，如因游客自身原因或因提供材料存在问题不能及时办理签证或签注，以及被有关部门拒发签证或签注，不准出入境而影响行程的，签证费及其他费用损失由游客自行承担。</p>
+                     <p>6、若您持港澳台护照，请务必在出行时携带有效的回乡证原件，以确保您能正常出入境。若您持外籍护照，请务必有有效的回国签证，以确保您能正常再次入境。</p>
+                     <p>7、为了不耽误您的行程，请您在国际航班起飞前120分钟到达机场办理登机以及出入境相关手续；如涉及海外国内段行程，请您在航班起飞前120分钟到达机场办理登机手续。</p>
+                     <p>8、客户因自身原因导致被当地旅游目的地国家海关边防拒绝入境，由此产生的所有损失由客户承担。</p>
+                     <p>9、客户因自身原因不能出发，取消退订或变更行程产生的损失费用由客户自行承担。</p>
+                     <p>10、本页面信息及服务内容皆由当地地陪导游或第三方旅行社提供，不代表蜜柚立场，蜜柚对其发布信息的准确性，及时性及完整性不负任何责任。</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- 引入页面尾部-->
+   <div ng-include="'tpl/footer.html'"></div>
+</div>

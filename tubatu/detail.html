@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>土巴兔详情页</title>
+  <link rel="stylesheet" href="css/common.css"/>
+  <link rel="stylesheet" href="css/detail.css"/>
+</head>
+<body>
+  <!-- 固定定位购物车部分div id='cart_box'-->
+  <div id="cart_box">
+	 <div id="cart_bar">
+     <a id="cart" href="shoppingcart.html">
+       <i class="iconcart"></i>
+       我的购物车
+       <span class='addcount'>0</span>
+     </a>
+      <div id="order">
+        <div id="sub_order">
+          <i></i>订单
+        </div>
+        <div class="bound_box">我的订单<b></b></div>
+      </div>
+      <div id="coupons">
+        <div id="sub_coupons">
+          <i></i>券
+        </div>
+        <div class="bound_box">我的优惠券<b></b></div>
+      </div>
+      <img src="images/jm.gif" alt=""/>
+      <div id="customer_service">
+        <div id="sub_customer_service">
+          <i></i>
+          客服
+        </div>
+        <div id="rabbit">
+          <img src="images/rabbit.gif" alt=""/>
+        </div>
+      </div>
+      <a href="#" class="to_top"><i></i></a>
+   </div>
+  </div>
+  <!-- 网页头部"-->
+  <div id="header"></div>
+  <!-- 页面导航部分 nav-->
+  <nav>
+    <div id="nav">
+      <ul id="nav_list">
+        <li id="nav_box"><a href="">全部商品分类</a><i></i></li>
+        <li><a href="">首页</a></li>
+        <li><a href="">建材城</a></li>
+        <li><a href="">家具城</a></li>
+        <li><a href="">品牌特卖</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- 商品详情部分div id="main_product""-->
+  <div id="main_product">
+    <!-- 面包屑导航 p id="bread_crumb"-->
+    <p id="bread_crumb">
+      <a href="">家居商城<b>&gt;</b></a>
+      <a href="">家纺<i></i><b>&gt;</b></a>
+      <a href="">日常家居<i></i><b>&gt;</b></a>
+      <a href="">毛巾浴巾<i></i><b>&gt;</b></a>
+      <a href="">速干毛巾<i></i><b>&gt;</b></a>
+      <a href="">雅棉床品健康家纺2016年新款全棉多臂波浪吸水面巾毛巾</a>
+    </p>
+    <!-- 商品详情部分div id="product_intro"-->
+    <div id="product_intro">
+      <div id="preview" class="lf">
+        <div id="mediumDiv">
+          <img id="mImg" src="images/towel_s1-m.jpg">
+          <div id="mask"></div>
+          <div id="superMask"></div>
+        </div>
+        <div id="largeDiv"></div>
+        <div id="smallDiv">
+          <a class="backward_disabled"></a>
+          <a class="forward"></a>
+          <ul id="icon_list">
+           <!-- <li>
+              <img src="images/towel_s1.jpg">
+            </li>-->
+          </ul>
+        </div>
+      </div>
+      <div id="detail" class="lf">
+        <h1>
+          <a href="">[Amain/雅棉]</a>
+          雅棉床品健康家纺2016年新款全棉多臂波浪吸水面巾毛巾
+        </h1>
+        <div class="price">
+          <p>
+            土巴兔价 <b class="sum_discount">&yen; 40</b><span class='discount'><i></i>8.0折</span> <s class="sum_price">&yen; 50</s>
+          </p>
+        </div>
+        <ul id="product_detail">
+          <li class="left">颜色分类</li>
+          <li class="right">
+            <ul class="color_class">
+              <!--<li><img src="images/towel_s1-s.jpg" alt=""/>1条装_鹅黄色</li>-->
+            </ul>
+          </li>
+          <li class="left">配送</li>
+          <li class="right">
+            <ul class="location">
+              <li>北京</li>
+              <li>北京</li>
+              <li>朝阳区</li>
+            </ul>
+          </li>
+          <li class="left">数量</li>
+          <li class="right" id="count">
+            <a class="calc">-</a><input class='buy_count' type="text" value="1"/><a class="calc">+</a>
+          </li>
+          <li class="buy_submit">
+            <a href="shoppingcart.html">立即购买</a>
+            <a class="add_cart"><i></i>加入购物车</a>
+            <span>已售出<b>0</b>件</span>
+          </li>
+        </ul>
+      </div>
+      <!--厂家直供，品牌授权 div id="product_brand"-->
+      <div id="product_brand" class="lf">
+        <div class="brand">
+          <span>厂家直供，品牌授权</span>
+        </div>
+        <div class="product_support">
+          <p><span>本商品支持</span></p>
+          <ul>
+            <li><i></i><a href="">假一赔十</a></li>
+            <li><i></i><a href="">定时发货</a></li>
+            <li><i></i><a href="">正规发票</a></li>
+            <li><i></i><a href="">退换无忧</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+  <!-- 网页主题部分section id="main"-->
+  <section id="main">
+    <div id="ornaments" class="general lf">
+      <p class="general_title">
+        工艺饰品
+      </p>
+      <header>
+        <ul>
+          <li class="current"><a href="tprice">价格</a></li>
+          <li><a href="buyed">销量</a></li>
+          <li><a href="love">好评</a></li>
+        </ul>
+        <ol>
+          <li class="page">&lt;<span class="start">1</span>/<span class="end">6</span>&gt;</li>
+          <li class="jump before stop"><</li>
+          <li class="jump after">></li>
+        </ol>
+      </header>
+      <ul class="general_style">
+      </ul>
+      <ol class="pager">
+      </ol>
+    </div>
+    <!-- 网页楼梯部分div id="elevator" -->
+    <div id="elevator" class="lf">
+      <div>
+        <ul>
+          <li class="a1"><i></i>工艺饰品</li>
+          <li><i></i>墙纸壁纸</li>
+          <li><i></i>床上用品</li>
+          <li><i></i>灯饰照明</li>
+          <li><i></i>子母床</li>
+          <li class="a2"><i></i>酒柜餐边柜</li>
+        </ul>
+        <p class="line"></p>
+      </div>
+    </div>
+    <div id="wallpaper" class="general lf">
+      <p class="general_title">
+        墙纸壁纸
+      </p>
+      <header>
+        <ul>
+          <li class="current"><a href="tprice">价格</a></li>
+          <li><a href="buyed">销量</a></li>
+          <li><a href="love">好评</a></li>
+        </ul>
+        <ol>
+          <li class="page">&lt;<span class="start">1</span>/<span class="end">6</span>&gt;</li>
+          <li class="jump before stop"><</li>
+          <li class="jump after">></li>
+        </ol>
+      </header>
+      <ul class="general_style">
+      </ul>
+      <ol class="pager">
+      </ol>
+    </div>
+    <div id="bedding" class="general lf">
+      <p class="general_title">
+        床上用品
+      </p>
+      <header>
+        <ul>
+          <li class="current"><a href="tprice">价格</a></li>
+          <li><a href="buyed">销量</a></li>
+          <li><a href="love">好评</a></li>
+        </ul>
+        <ol>
+          <li class="page">&lt;<span class="start">1</span>/<span class="end">6</span>&gt;</li>
+          <li class="jump before stop"><</li>
+          <li class="jump after">></li>
+        </ol>
+      </header>
+      <ul class="general_style">
+      </ul>
+      <ol class="pager">
+      </ol>
+    </div>
+    <div id="droplight" class="general lf">
+      <p class="general_title">
+        灯饰照明
+      </p>
+      <header>
+        <ul>
+          <li class="current"><a href="tprice">价格</a></li>
+          <li><a href="buyed">销量</a></li>
+          <li><a href="love">好评</a></li>
+        </ul>
+        <ol>
+          <li class="page">&lt;<span class="start">1</span>/<span class="end">6</span>&gt;</li>
+          <li class="jump before stop"><</li>
+          <li class="jump after">></li>
+        </ol>
+      </header>
+      <ul class="general_style">
+      </ul>
+      <ol class="pager">
+      </ol>
+    </div>
+    <div id="lashbed" class="general lf">
+      <p class="general_title">
+        子母床
+      </p>
+      <header>
+        <ul>
+          <li class="current"><a href="tprice">价格</a></li>
+          <li><a href="buyed">销量</a></li>
+          <li><a href="love">好评</a></li>
+        </ul>
+        <ol>
+          <li class="page">&lt;<span class="start">1</span>/<span class="end">6</span>&gt;</li>
+          <li class="jump before stop"><</li>
+          <li class="jump after">></li>
+        </ol>
+      </header>
+      <ul class="general_style">
+      </ul>
+      <ol class="pager">
+      </ol>
+    </div>
+    <div id="wine" class="general lf">
+      <p class="general_title">
+        酒柜餐边柜
+      </p>
+      <header>
+        <ul>
+          <li class="current"><a href="tprice">价格</a></li>
+          <li><a href="buyed">销量</a></li>
+          <li><a href="love">好评</a></li>
+        </ul>
+        <ol>
+          <li class="page">&lt;<span class="start">1</span>/<span class="end">6</span>&gt;</li>
+          <li class="jump before stop">&lt;</li>
+          <li class="jump after">&gt;</li>
+        </ol>
+      </header>
+      <ul class="general_style">
+      </ul>
+      <ol class="pager">
+      </ol>
+    </div>
+    <div class="clear"></div>
+  </section>
+  <div id="footer"></div>
+  <div class="modal"></div>
+  <div class="modal-quit"></div>
+  <script src="js/jquery-1.11.3.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/detail.js"></script>
+</body>
+</html>

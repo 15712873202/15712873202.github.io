@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>土巴兔购物车页面</title>
+  <link rel="stylesheet" href="css/common.css"/>
+  <link rel="stylesheet" href="css/shoppingcart.css"/>
+</head>
+<body>
+  <div id="header"></div>
+  <div class="dividing-line"></div>
+  <div class="progress-bills">
+    <ul>
+      <li class="current">
+        <b>1</b>
+        <p>查看购物车</p>
+      </li>
+      <li>
+        <b>2</b>
+        <p>确认订单信息</p>
+      </li>
+      <li>
+        <b>3</b>
+        <p>成功提交订单</p>
+      </li>
+    </ul>
+    <p></p>
+  </div>
+  <section id="main">
+    <div id="cart_full">
+      <p>全部商品</p>
+      <table id="table_cart">
+        <thead>
+          <tr>
+            <th>
+              <input type="checkbox" id="selAll"/>
+              <label for="selAll">全选</label>
+            </th>
+            <th>商品</th>
+            <th>单价/元</th>
+            <th>数量</th>
+            <th>小计</th>
+            <th>操作</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!--<tr>
+            <td>
+              <input class="lf" type="checkbox"/>
+              <input type="hidden" value="1" />
+              <div><img src="images/towel_s2.jpg"/></div>
+            </td>
+            <td><a href="">小米 Note</a></td>
+            <td class="table_price">1199.00</td>
+            <td>
+              <button class="table_calc">-</button><input type="text" class="table_count" value="1"/><button class="table_calc">+</button>
+            </td>
+            <td><span class="sum_price">1199.00</span></td>
+            <td><a href=""  class='table_delete'>删除</a></td>
+          </tr>-->
+        </tbody>
+        <tfoot>
+        <tr>
+          <td colspan="6">
+            <div id="go_settlement">
+              <span class="lf">选购 <b class="all_count">0</b> 件商品</span>
+              <a href="addorder.html" class="rt go_shopping">开始结算<i></i></a>
+              <span class="rt">共计 <b class="all_sum">0</b> 元</span>
+            </div>
+          </td>
+        </tr>
+        </tfoot>
+      </table>
+    </div>
+    <div id="cart_empty">
+      <div></div>
+      <p>空荡荡的购物车！</p>
+      <a href="detail.html" class="go_shopping">开始选购<i></i></a>
+    </div>
+  </section>
+  <div class="modal">
+  </div>
+  <div class="modal-quit"></div>
+  <div class="delete-modal">
+    <div class="delete-modal-dialog">
+      <div class="delete-modal-content">
+        <p class='delete rt'>&times;</p>
+        <div class="delete-content">
+          <div class="lf"><img src="images/rabbit.png" height="120"></div>
+          <div class="lf delete-button">
+            <h2>您真的忍心不要我吗？</h2>
+            <p>删除的商品有可能被别人抢走哦！</p>
+            <button type="button" class="btn btn-danger">删除</button>
+            <button type="button" class="btn btn-success">先留着</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="footer"></div>
+  <script src="js/jquery-1.11.3.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/shoppingcart.js"></script>
+</body>
+</html>
